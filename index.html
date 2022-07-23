@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Nerdle</title>
+</head>
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <h1><strong class="help_name" ></strong></h1>
+        <span>
+            <h2 class="text">How to play</h2>
+          <ul>
+            <li >You have 6 guesses to guess the correct Number.</li>
+            <li >You can guess any valid Number.</li>
+            <li >
+              After each guess, each letter will turn green, yellow, or gray.
+            </li>
+          </ul>
+          <div >
+            <span><strong style="background-color:green;">GREEN </strong>: Correct letter, correct spot</span>
+          </div><br>
+          <div >
+            <span><strong style="background-color:yellow;">YELLOW </strong>: Correct letter, wrong spot</span>
+          </div><br>
+          <span><strong style="background-color:grey;">GREY </strong>: Wrong letter</span>
+        </span>
+    </div>
+    <div class="game-container">
+        <div class="title-container">
+            <h1>Nerdle Game</h1>
+        </div>
+        <div class="message-container" ></div>
+        <div class="tile-container" ></div>
+        <div class="key-container" ></div>
+        <img class="static" src="./statistical-graphic.png">
+        <div class="congo"></div>
+        <div class="static-page">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="player_static">
+            <table>
+              <thead id="tableData">
+              </thead>
+            </table>
+          </div>
+        </div>
+        
+    </div>
+<script src="./app.js"></script>
+</body>
+
+</html>
